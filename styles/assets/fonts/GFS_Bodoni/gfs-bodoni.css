@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'GFS Bodoni';
+    src: url('GFSBodoni.woff2') format('woff2'),
+         url('GFSBodoni.woff') format('woff'),
+         url('GFSBodoni.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GFS Bodoni';
+    src: url('GFSBodoniBold.woff2') format('woff2'),
+         url('GFSBodoniBold.woff') format('woff'),
+         url('GFSBodoniBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GFS Bodoni';
+    src: url('GFSBodonilt.woff2') format('woff2'),
+         url('GFSBodonilt.woff') format('woff'),
+         url('GFSBodonilt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GFS Bodoni';
+    src: url('GFSBodoniBoldlt.woff2') format('woff2'),
+         url('GFSBodoniBoldlt.woff') format('woff'),
+         url('GFSBodoniBoldlt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
