@@ -72,7 +72,7 @@ footer {
 }
 
 .speakers-section {
-    display: none /*flex*/;
+    display: flex;
     flex-direction: column;
 }
 
@@ -80,7 +80,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     column-gap: 0;
-    row-gap: 30px;
+    justify-content: center;
 }
 
 .speakers-title {
@@ -94,7 +94,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 0;
-    flex: 1;
 }
 
 .speakers-img {
@@ -110,6 +109,8 @@ footer {
 
 .speaker-bio p {
     margin: 0;
+    z-index: 20;
+    position: relative;
 }
 
 .bio {
@@ -135,3 +136,80 @@ footer {
     cursor: pointer;
     text-decoration: underline;
 }
+
+@media (min-width: 1600px) {
+    .speakers-desc {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .speakers-desc {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 1199px) {
+    .speakers-desc {
+        width: 50%;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 799px) {
+    .bio {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 649px) {
+    .speakers-desc {
+        width: 100%;
+    }
+}
+
+.sponsors {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--light-gray);
+}
+
+.sponsors h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.sponsor-category {
+    margin-bottom: 30px;
+}
+
+.sponsor-category h3 {
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sponsor-logos img {
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.sponsor-logos img:hover {
+    transform: scale(1.1);
+}
+
+/* Colors for categories */
+.diamond h3 { color: #b9f2ff; } /* Light Blue */
+.platinum h3 { color: #fff1d6; } /* Silver */
+.gold h3 { color: #ffd700; } /* Gold */
+.silver h3 { color: #7e7a7a; } /* Silver */
+.friend h3 { color: #8a2be2; } /* Purple */
+.in-kind h3 { color: #bd1f1f; } /* Orange */
