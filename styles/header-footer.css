@@ -96,17 +96,17 @@
 .overlay-menu {
     position: fixed;
     top: 0;
-    right: -230px; /* Initially hidden off-screen */
-    width: 230px;
+    right: -100%; /* Initially hidden off-screen */
+    width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Dark background similar to the header */
+    background-color: rgba(0, 0, 0, 0.9); 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     transition: right 0.3s ease;
     z-index: 1002;
-    backdrop-filter: blur(8px); /* Same blur effect as the header */
+    backdrop-filter: blur(8px); 
 }
 
 .overlay-menu.active {
@@ -115,7 +115,6 @@
 
 .overlay-header {
     width: 100%;
-    padding: 20px;
     text-align: right;
 }
 
@@ -149,23 +148,23 @@
 }
 
 /* Media Queries for Tablet and Mobile */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .menu {
-        display: none; /* Hide the default menu on smaller screens */
+        display: none; 
     }
 
     .hamburger {
-        display: flex; /* Show the hamburger menu */
+        display: flex;
     }
 
     .overlay-menu.active {
-        background-color: rgba(0, 0, 0, 0.9); /* Slightly darker background on overlay */
+        background-color: rgba(0, 0, 0, 0.9); 
     }
 }
 
 @media (max-width: 480px) {
     .logo {
-        height: 25px; /* Adjust logo size for smaller screens */
+        height: 25px; 
     }
 
     .head {
