@@ -147,8 +147,13 @@ footer {
     position: absolute;
     bottom: 50px;
     color: #f4d792;
-    font-size: calc(20px + 2vw);
+    font-size: calc(30px + 1vw);
     padding: 10px;
+    margin: 0;
+}
+
+.booths {
+    text-align: center;
 }
 
 #program-table {
@@ -225,7 +230,7 @@ footer {
 }
 
 .sponsor-category {
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 
 .sponsor-category h3 {
