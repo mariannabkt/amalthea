@@ -74,6 +74,7 @@ footer {
 .speakers-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .speakers {
@@ -81,6 +82,7 @@ footer {
     flex-wrap: wrap;
     column-gap: 0;
     justify-content: center;
+    width: 100%;
 }
 
 .speakers-title {
