@@ -1,0 +1,21 @@
+{
+    "name": "TEDxAUEB 2025",
+    "short_name": "Amalthea",
+    "start_url": "https://amalthea.tedxaueb.org/",
+    "display": "standalone",
+    "background_color": "#d2bdca",
+    "theme_color": "#364466",
+    "icons": [
+      {
+        "src": "/styles/logo/TEDxAUEB_Logo_White_500x500.png",
+        "sizes": "500x500",
+        "type": "image/png"
+      },
+      {
+        "src": "/styles/logo/TEDxAUEB_Logo_White_1080x1080.png",
+        "sizes": "1080x1080",
+        "type": "image/png"
+      }
+    ]
+  }
+  
