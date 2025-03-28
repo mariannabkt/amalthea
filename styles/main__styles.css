@@ -67,8 +67,12 @@ footer {
 }
 
 .amalthea-desc {
-    padding: 0 25px 50px;
+    padding: 0 10% 50px;
     text-align: center;
+}
+
+.amalthea-desc h3 {
+    font-size: calc(22px + 1vw);
 }
 
 .speakers-section {
@@ -139,19 +143,59 @@ footer {
     text-decoration: underline;
 }
 
-@media (min-width: 1600px) {
-    .speakers-desc {
-        width: 25%;
-    }
+.card-title {
+    position: absolute;
+    bottom: 50px;
+    color: #f4d792;
+    font-size: calc(20px + 2vw);
+    padding: 10px;
 }
 
-@media (min-width: 1200px) and (max-width: 1599px) {
+#program-table {
+    border-spacing: 15px;
+}
+
+#program-table .table-title {
+    border-bottom: #364466 2px solid;
+    padding-top: 30px;
+    text-align: left;
+    font-size: calc(20px + 1vw);
+}
+
+#program-table .table-content {
+    font-size: calc(16px + 0.8vw);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+#program-table .table-time {
+    font-size: calc(12px + 0.5vw);
+    border-right: #364466 1px solid;
+    padding-right: 15px;
+    width: 20%;
+}
+
+#program-table .table-in-brakets {
+    font-weight: 400;
+    font-size: calc(12px + 0.5vw);
+}
+
+#program-table .brown {
+    color: #725348;
+    border-color: #725348;
+}
+
+#program-table td {
+    vertical-align: top;
+}
+
+@media (min-width: 1170px) {
     .speakers-desc {
         width: 33.33%;
     }
 }
 
-@media (min-width: 650px) and (max-width: 1199px) {
+@media (min-width: 650px) and (max-width: 1169px) {
     .speakers-desc {
         width: 50%;
     }
@@ -209,15 +253,3 @@ footer {
     transform: scale(1.1);
 }
 
-
-
-
-
-
-/* Colors for categories */
-.diamond h3 { color: #b9f2ff; } /* Light Blue */
-.platinum h3 { color: #fff1d6; } /* Silver */
-.gold h3 { color: #ffd700; } /* Gold */
-.silver h3 { color: #7e7a7a; } /* Silver */
-.friend h3 { color: #8a2be2; } /* Purple */
-.in-kind h3 { color: #bd1f1f; } /* Orange */
